@@ -1,0 +1,6 @@
+movie-vault/
+├── index.html        # 網頁主頁面
+├── style.css         # 黑白金奢華風格 CSS 樣式
+├── AGENTS.md         # 剛剛定義好的 AI 規範文件
+└── assets/
+    └── posters/      # 存放作品海報圖片的資料夾
