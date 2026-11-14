@@ -11,84 +11,145 @@
 </head>
 <body>
 
-  <!-- 頁首 Header -->
+  <!-- 頂部導覽列 (多頁面切換) -->
+  <nav class="vault-nav">
+    <div class="nav-logo">OBSIDIAN & GOLD</div>
+    <ul class="nav-links">
+      <li><a href="#" class="nav-btn active" data-tab="gallery-page">典藏展示</a></li>
+      <li><a href="#" class="nav-btn" data-tab="about-page">關於本站</a></li>
+    </ul>
+  </nav>
+
+  <!-- 頁頭 -->
   <header class="vault-header">
-    <div class="logo">OBSIDIAN & GOLD</div>
-    <p class="subtitle">Personal Film & Anime Vault — 個人觀影典藏庫</p>
+    <h1 class="logo">FILM & ANIME VAULT</h1>
+    <p class="subtitle">個人觀影與動畫紀錄 · 極致黑白金典藏</p>
     <div class="gold-divider"></div>
   </header>
 
-  <!-- 作品網格展示區 Main Content -->
-  <main class="vault-container">
+  <!-- 頁面 1：典藏展示頁 (Gallery Page) -->
+  <main id="gallery-page" class="page-section active">
     
-    <!-- 卡片 1 -->
-    <article class="vault-card">
-      <div class="poster-wrapper">
-        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=600&q=80" alt="沙丘" class="poster-img">
-        <span class="gold-badge">電影</span>
-      </div>
-      <div class="card-content">
-        <div class="card-header">
-          <h2 class="film-title">沙丘：第二部 <span class="orig-title">Dune: Part Two</span></h2>
-          <div class="star-rating">★★★★★ <span class="score">5.0</span></div>
-        </div>
-        <p class="tagline">「沉浸於光影與命運交織的史詩巨作。」</p>
-        <div class="highlights">
-          <span>#視覺震撼</span>
-          <span>#哲學思辨</span>
-          <span>#神級配樂</span>
-        </div>
-        <p class="review-text">浩瀚的沙漠視效與頂級音效設計將科幻史詩推向全新高度，保羅的命運轉折令人屏息。</p>
-      </div>
-    </article>
+    <!-- 分類篩選按鈕 -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">全部作品</button>
+      <button class="filter-btn" data-filter="movie">電影</button>
+      <button class="filter-btn" data-filter="anime">動畫</button>
+      <button class="filter-btn" data-filter="series">影集</button>
+    </div>
 
-    <!-- 卡片 2 -->
-    <article class="vault-card">
-      <div class="poster-wrapper">
-        <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=600&q=80" alt="葬送的芙莉蓮" class="poster-img">
-        <span class="gold-badge">動畫</span>
-      </div>
-      <div class="card-content">
-        <div class="card-header">
-          <h2 class="film-title">葬送的芙莉蓮 <span class="orig-title">Sousou no Frieren</span></h2>
-          <div class="star-rating">★★★★★ <span class="score">5.0</span></div>
-        </div>
-        <p class="tagline">「英雄旅途終結之後，才是情感與時間的漫長起點。」</p>
-        <div class="highlights">
-          <span>#極致敘事</span>
-          <span>#情感細膩</span>
-          <span>#作畫神級</span>
-        </div>
-        <p class="review-text">淡雅卻後勁十足的奇幻敘事，將時間的流逝與生命的羈絆描繪得無比動人。</p>
-      </div>
-    </article>
-
-    <!-- 卡片 3 -->
-    <article class="vault-card">
-      <div class="poster-wrapper">
-        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=600&q=80" alt="奧術" class="poster-img">
-        <span class="gold-badge">影集</span>
-      </div>
-      <div class="card-content">
-        <div class="card-header">
-          <h2 class="film-title">奧術 <span class="orig-title">Arcane</span></h2>
-          <div class="star-rating">★★★★★ <span class="score">4.9</span></div>
-        </div>
-        <p class="tagline">「雙城對立下的血脈悲劇，美學與劇情的巔峰融合。」</p>
-        <div class="highlights">
-          <span>#美術美學</span>
-          <span>#雙城悲劇</span>
-          <span>#角色刻劃</span>
-        </div>
-        <p class="review-text">3D與手繪結合的極致動態美學，搭配張力十足的人物關係，重新定義了遊戲改編動畫。</p>
-      </div>
-    </article>
-
+    <!-- 動態渲染作品區塊 -->
+    <div id="vault-grid" class="vault-container"></div>
   </main>
 
+  <!-- 頁面 2：關於本站與規範頁 (About Page) -->
+  <section id="about-page" class="page-section">
+    <div class="about-card">
+      <h2>關於 OBSIDIAN & GOLD VAULT</h2>
+      <p>本站為個人觀影紀錄與深度劇評典藏庫，採用暗黑奢華（Dark Luxury）視覺規範打造。</p>
+      <hr class="card-divider">
+      <h3>🏛️ 典藏原則 (Vault Principles)</h3>
+      <ul>
+        <li><strong>客觀與主觀並重：</strong> 嚴選 4.5 星以上精選作品入庫。</li>
+        <li><strong>視覺一致性：</strong> 嚴格遵守黑白金三色視覺規範，絕不破壞畫面質感。</li>
+        <li><strong>AI Agent 驅動：</strong> 全站內容透過 JSON Schema 自動化解析與渲染。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 作品詳細資訊彈窗 (Modal View) -->
+  <div id="detail-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="close-btn" id="close-modal">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
   <footer class="vault-footer">
-    <p>© 2026 Film & Anime Vault. Styled with Obsidian & Gold Aesthetics.</p>
+    <p>© 2026 Obsidian & Gold Vault. All Rights Reserved.</p>
   </footer>
 
+  <script>
+    let allVaultData = [];
+
+    // 載入 JSON 資料
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        allVaultData = data;
+        renderCards(allVaultData);
+      })
+      .catch(err => console.error("資料載入失敗:", err));
+
+    // 渲染卡片
+    function renderCards(data) {
+      const grid = document.getElementById('vault-grid');
+      grid.innerHTML = data.map(item => `
+        <article class="vault-card" onclick="openModal('${item.id}')">
+          <div class="poster-wrapper">
+            <img src="${item.poster}" alt="${item.title}" class="poster-img">
+            <span class="gold-badge">${item.typeName}</span>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <h2 class="film-title">${item.title} <span class="orig-title">${item.originalTitle} (${item.year})</span></h2>
+              <div class="star-rating">★ ${item.rating.toFixed(1)} <span class="score">${item.status}</span></div>
+            </div>
+            <p class="tagline">「${item.tagline}」</p>
+            <div class="highlights">
+              ${item.highlights.map(h => `<span>#${h}</span>`).join('')}
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // 分類篩選功能
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        const filter = e.target.dataset.filter;
+        const filtered = filter === 'all' ? allVaultData : allVaultData.filter(d => d.type === filter);
+        renderCards(filtered);
+      });
+    });
+
+    // 多頁面切換導覽 (Tab Switcher)
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
+        
+        e.target.classList.add('active');
+        document.getElementById(e.target.dataset.tab).classList.add('active');
+      });
+    });
+
+    // 彈窗細節呈現
+    function openModal(id) {
+      const item = allVaultData.find(d => d.id === id);
+      if (!item) return;
+      document.getElementById('modal-body').innerHTML = `
+        <div class="modal-header">
+          <h2>${item.title}</h2>
+          <p class="modal-sub">${item.originalTitle} | ${item.year} | ${item.typeName}</p>
+        </div>
+        <div class="modal-rating">評分：★ ${item.rating.toFixed(1)} / 5.0 (${item.status})</div>
+        <p class="modal-tagline">「${item.tagline}」</p>
+        <div class="modal-highlights">
+          ${item.highlights.map(h => `<span>#${h}</span>`).join('')}
+        </div>
+        <h4 style="color:var(--accent-gold); margin-top:15px;">深度觀後感：</h4>
+        <p class="modal-review">${item.review}</p>
+      `;
+      document.getElementById('detail-modal').classList.add('open');
+    }
+
+    document.getElementById('close-modal').addEventListener('click', () => {
+      document.getElementById('detail-modal').classList.remove('open');
+    });
+  </script>
 </body>
 </html>
