@@ -78,7 +78,7 @@
     "rating": 5.0,
     "status": "已完結",
     "year": "1994",
-    "poster": "https://m.media-amazon.com/images/S/pv-target-images/c3e2b70ddd7ff63cc2594b53ae7b39e1641705e0c018b68aade8c3689bee3844.jpg",
+    "poster": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2023/11/friends-feature-image.jpg",
     "tagline": "I'll be there for you.",
     "highlights": ["美劇天花板", "神級友情", "治癒日常"],
     "review": "橫跨十季的經典情境喜劇，六個性格迥異卻彼此扶持的好友，用笑聲化解了大城市裡的孤單與焦慮，是無論何時重看都能獲得溫暖的心靈避風港。"
@@ -110,5 +110,19 @@
     "tagline": "When you play the game of thrones, you win or you die.",
     "highlights": ["史詩巨作", "權謀博弈", "宏大世界觀"],
     "review": "無與倫比的奇幻史詩格局，複雜立體的多線敘事與令人震撼的劇情轉折，將人性在權力、家族與生存面前的掙扎展現得淋漓盡致。"
+  },
+  {
+    "id": "sherlock",
+    "title": "新世紀福爾摩斯",
+    "originalTitle": "Sherlock",
+    "type": "series",
+    "typeName": "影集",
+    "rating": 5.0,
+    "status": "已完結",
+    "year": "2010",
+    "poster": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e6fd3532032273.566b40caa5ef7.jpg",
+    "tagline": "The game is on.",
+    "highlights": ["英倫推理", "神級節奏", "高智商對決"],
+    "review": "將經典偵探小說完美融入現代倫敦，快節奏的剪輯與具象化的『記憶宮殿』視覺表現令人驚豔。夏洛克與華生之間無可取代的默契，以及與莫里亞蒂的巔峰對決，堪稱現代推理影集的最高標竿。"
   }
 ]
