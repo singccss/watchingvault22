@@ -1,0 +1,44 @@
+[
+  {
+    "id": "dune-2",
+    "title": "沙丘：第二部",
+    "originalTitle": "Dune: Part Two",
+    "type": "movie",
+    "typeName": "電影",
+    "rating": 5.0,
+    "status": "已典藏",
+    "year": "2024",
+    "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=600&q=80",
+    "tagline": "沉浸於光影與命運交織的史詩巨作。",
+    "highlights": ["視覺震撼", "哲學思辨", "神級配樂"],
+    "review": "浩瀚的沙漠視效與頂級音效設計將科幻史詩推向全新高度，保羅的命運轉折與宗教寓意令人屏息。丹尼維勒納夫再次證明了他在當代科幻電影中不可動搖的美學地位。"
+  },
+  {
+    "id": "frieren",
+    "title": "葬送的芙莉蓮",
+    "originalTitle": "Sousou no Frieren",
+    "type": "anime",
+    "typeName": "動畫",
+    "rating": 5.0,
+    "status": "已完結",
+    "year": "2023",
+    "poster": "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=600&q=80",
+    "tagline": "英雄旅途終結之後，才是情感與時間的漫長起點。",
+    "highlights": ["極致敘事", "情感細膩", "作畫神級"],
+    "review": "淡雅卻後勁十足的奇幻敘事，將時間的流逝與生命的羈絆描繪得無比動人。每一集關於時間與記憶的對話，都像是在平靜的水面上泛起漣漪。"
+  },
+  {
+    "id": "arcane",
+    "title": "奧術",
+    "originalTitle": "Arcane",
+    "type": "series",
+    "typeName": "影集",
+    "rating": 4.9,
+    "status": "已完結",
+    "year": "2021",
+    "poster": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=600&q=80",
+    "tagline": "雙城對立下的血脈悲劇，美學與劇情的巔峰融合。",
+    "highlights": ["美術美學", "雙城悲劇", "角色刻劃"],
+    "review": "3D與手繪結合的極致動態美學，搭配張力十足的人物關係與配樂，重新定義了遊戲改編動畫的最高標準。"
+  }
+]
